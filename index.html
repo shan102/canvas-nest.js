@@ -1,69 +1,281 @@
-<!DOCTYPE html>
+!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>canvas-nest.js</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
+	<head>
+		<title>就是個平凡無奇的網頁</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="零基礎學習架設網站、成大會計"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta property="og:title" content="個人網頁模版教學"/>
+		<meta property="og:url" content="http://nckuacc.com/"/>
+		<meta property="og:description"="description" content="厭世歌曲系列" />
+        <meta property="og:image" content="images/cover.jpg" />
+		<meta property="og:type" content="website" />
 
-    html, body {
-      height: 100%;
-      width: 100%;
-    }
+	</head>
+	<body class="landing">
 
-    #github-iframe {
-      position: fixed;
-      left: 32px;
-      top: 32px;
-    }
+		<!-- Page Wrapper -->
 
-    #area-render {
-      position: fixed;
-      width: 320px;
-      height: 160px;
-      right: 4px;
-      bottom: 4px;
-      border: dashed 1px #ccc;
-    }
-  </style>
-</head>
-<body>
-<div id="github-iframe"></div>
+			<div id="page-wrapper">
 
-<div id="area-render"></div>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">NCKUACC</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">首頁</a></li>
+											<li><a href="tingkai/index.html">厭世歌曲</a></li>
+											<li><a href="yen/index.html">煙火裡的塵埃</a></li>
+											<li><a href="plugins.html">他們說我是沒用的年輕人</a></li>
+											<li><a href="github.html">沒有人在乎你在乎的事</a></li>
+											<li><a href="godaddy.html">宋尚緯的詩</a></li>
+											<li><a href="miscellaneous.html">結語</a></li>
+											<li><a href="about.html">學校</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-<script type="text/javascript" color="255,0,0" pointColor="255,0,0" opacity='0.7' zIndex="-2" count="100" src="dist/canvas-nest.js"></script>
-<script type="text/javascript" src="dist/canvas-nest.umd.js"></script>
-<script type="text/javascript">
-  var cn = new CanvasNest(document.getElementById('area-render'), {
-    color: '255,0,255',
-    count: 50,
-  });
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>厭世歌曲系列</h2>
+							<p>每一個音符、每一段樂句是我們對這個世界發出的求救，是聲嘶力竭的吶喊，像是沒有明天那般。</p>
+							<ul class="actions vertical">
+								<li><a href="tingkai/index.html" class="button" target="_blank">探索世界</a></li>
+								<li><a href="yen/index.html" class="button special" target="_blank">YOUTUBE</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
 
-  // 下面为其他 js，无需关注
-  function asyncLoad() {
-    //async load github
-    var i = document.createElement("iframe");
-    i.src = "https://ghbtns.com/github-btn.html?user=hustcc&repo=canvas-nest.js&type=star&count=true";
-    i.scrolling = "no";
-    i.frameborder = "0";
-    i.border = "0";
-    i.setAttribute("frameborder", "0", 0);
-    i.width = "100px";
-    i.height = "20px";
-    document.getElementById("github-iframe").appendChild(i);
-  }
-  function loadGitHubBtn() {
-    if (window.addEventListener) {window.addEventListener("load", asyncLoad, false);}
-    else if (window.attachEvent) {window.attachEvent("onload", asyncLoad);}
-    else {window.onload = asyncLoad;}
-  }
+				<!-- One -->
+					<section id="one" class="wrapper style4 special">
+						<div class="inner">
+							<header class="major">
+								<h2>在這個樂壇百花盛開的時代，除了有傳統的抒情歌曲之外也開始多了一些厭世歌曲，主要透過音樂來表達對自己或是對這個世界的不滿。<br>而小眾獨立樂團也開始如雨後春筍般地冒出來，唱出年輕人們心聲，歌詞表達的內容多少都懷著對這世界的憤恨及不滿。</h2>
+								<p>饒舌歌曲起初也是從憤怒發想，而漸漸創造出來，有別於傳統歌曲的表現方式。<br>在「厭世」這個大主題下我選擇的是被世界遺棄的人們，歌詞分別道出了關於自己存的渺小和沒有人在乎自己的感受等。而這次主要介紹的歌曲分別有華晨宇〈煙火裡的塵埃〉、好樂團〈他們說我是沒有用的年輕人〉、那我懂你意思了〈沒有人在乎你在乎的事〉<br />
+歌曲連結：<a href="https://youtu.be/7_I6UT3JObs" target="_blank">templated.co</a>&nbsp;<a href="https://youtu.be/FNJG6MsKO0k" target="_blank">html5up.net</a>&nbsp;<a href="https://youtu.be/UX2uQyHaCUk" target="_blank">designscrazed.org</a><br />或搜尋 厭世歌曲</p>
+							</header>
 
-  loadGitHubBtn();
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="https://p1.music.126.net/3XSdOFqjkphPyVwnSdTMsw==/6647647302654184.jpg"" /></div><div class="content">
+								<h2>〈煙火裡的塵埃〉</h2>
+								<p>這首歌主要在表達一種孤獨的感受，只有自己揣著真心，看見這個虛假的世界，彷彿與世界格格不入。沒有辦法融入社會的自己，就像塵埃一般，也沒有辦法被人理解，我只是我，是一瞬絢爛的煙火後散落的塵埃。</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><a href="https://i.marieclaire.com.tw/assets/mc/202010/5F892906859F01602824454.jpeg" target="_blank" class="pic"><img src="https://i.marieclaire.com.tw/assets/mc/202010/5F892906859F01602824454.jpeg" alt="" /></a></div><div class="content">
+								<h2>〈他們說我是沒有用的年輕人〉</h2>
+								<p>「社會並不只是把人磨圓潤了，而是把太尖銳的銼得圓潤、太圓潤的磨得尖銳。」這首歌描寫各位『年輕人們』面對世界的無力感。」由於年輕人在社會上大多會被看輕，我們有可能因為自己的長相、資歷以及年紀都沒有別人資深，進而被一些長輩賜教，甚至嘲諷著年輕人就只想著小確幸。然而身在社會龐大壓力下的我們，有時必須靠著那一點小確幸而支撐過活，如果人人都有大確幸的話，誰不想要呢？現在的人們卻背負著房貸等各種職場、家庭的工作壓力，這首歌因而成為新一代年輕人們的歌聲。</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><a href="https://i.ytimg.com/vi/UX2uQyHaCUk/maxresdefault.jpg" class="pic" target="_blank"><img src="https://i.ytimg.com/vi/UX2uQyHaCUk/maxresdefault.jpg" alt="" /></a></div><div class="content">
+								<h2>〈沒有人在乎你在乎的事〉</h2>
+								<p>「這首歌描述的現實依舊沒有改變。訕笑著彷彿事不關己的閒言，要我們在另一個世界裡做夢的妄語，依舊佔據著主流論述。就像我，就像你，我們是那些被忽視的人，卻也可能同時是遺忘自己的人。當世代戰爭在2014年揭竿而起，〈沒有人在乎你在乎的事〉這首歌再度質問著，一百年前的歷史和一百年後的未來與我們有什麼關係？你決定好站在什麼位置來面對這個壓抑而虛假的年代？」</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="https://images.unsplash.com/photo-1679398380337-d953e0f65e60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80" alt="" /></div><div class="content">
+								<h2>宋尚緯的詩</h2>
+								<p>〈以為那就是愛了〉──宋尚緯<br>
+像是我所記得的一切<br>
+都瞬間消失<br>
+城市裡只剩下機器<br>
+沉默地運作<br>
+衰老的模樣與我一樣<br>
+走進陰暗的河裡<br>
+想像自己是理解愛的<br>
+理解那些快樂憂傷<br>
+與那些痛苦寂寞<br>
+　<br>
+一群人坐在路燈底下<br>
+他們安靜<br>
+像是在迎接死亡<br>
+或者等待痛苦的枝枒<br>
+他們也都曾快樂過吧<br>
+有過快樂<br>
+才懂得什麼是痛苦<br>
+有人愛過你<br>
+所以你知道那就是愛了<br>
+　
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><a href="https://images.unsplash.com/photo-1607688387751-c1e95ae09a42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="pic" target="_blank"><img src="https://images.unsplash.com/photo-1607688387751-c1e95ae09a42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" /></a></div><div class="content">
+								<h2>2</h2>
+								<p><br>
+你看見人們從遠方走來<br>
+小心地等待<br>
+發生的一切故事<br>
+以為那些細節都屬於你了<br>
+你讓自己在宇宙裡漂浮<br>
+小心翼翼地翻身<br>
+將那些錯誤的選項<br>
+都變成對的結局<br>
+彷彿這樣就沒有錯的選擇<br>
+　<br>
+我們的時間和我們一樣<br>
+會老去也會死去<br>
+一切都是很漫長的<br>
+卻又像是一瞬間的事<br>
+所有故事都是青春的屍體<br>
+你以為自己仍年輕<br>
+但我們都不再是被愛著的少年了<br>
+有些人傷害你<br>
+你便以為那就是愛了<br>
+</p></p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><a href="https://images.unsplash.com/photo-1683966292865-c07ceecdbc3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="324" height="360" alt=" class="pic" target="_blank"><img src="https://images.unsplash.com/photo-1683966292865-c07ceecdbc3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="324" height="360" alt=" alt="" /></a></div><div class="content">
+								<h2>結語</h2>
+								<p>這次報告的三首歌都有對於自身與世界無法融入，無法被理解的感受，同樣散發著難以言喻的孤寂感，我們都被這世界給遺棄，沒有人能聽見我們的聲音，而我們存在也是渺小的像一粒煙火裡的散落塵埃，既卑微又不入眼，年輕人扛著社會巨大的壓力，有多麼希望這世界能毀滅呢？這三首歌很好的互相融合，也能道出現在世人的壓力和對世界的不滿，及憤恨。寧願世界的消失，將痛苦和快樂都全數遺忘。這樣的厭世歌反映了年輕人對社會無奈和壓力下對自己的失望。</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><a href="https://images.unsplash.com/photo-1683644673880-dadc9f45b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="500" height="360" alt=" class="pic" target="_blank"><img src="https://images.unsplash.com/photo-1683644673880-dadc9f45b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="500" height="360" alt=" alt="" /></a></div><div class="content">
+								<h2>自己創作</h2>
+								<p> <p>Time forgets睡美人</p>
+          
+          <p>當世界安靜下來</p>
+          <p>沒有人知道我存在</p>
+          <p>詛咒蔓延了數百年</p>
+          <p>等待誰的呼喚</p>
+          <p>能夠跨越重重阻礙</p>
+          <p>解救那個無助女孩</p>
+          <p>替她拂去所有悲哀</p>
+          <p>當所有荊棘消退了</p>
+          <p>當你出現在她面前 </p>
+          <p>用吻喚醒的這瞬間</p>
+          <p>世界變得五彩繽紛</p>
+          <p>當所有惡意消散了</p>
+          <p>當她能展露笑顏</p>
+          <p>只因為你的出現 </p>
+          <p>她才能重獲自由</p>
+</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><a href="https://plus.unsplash.com/premium_photo-1683769252067-c6801a31aeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="500" height="360" alt=" target="_blank" class="pic"><img src="https://plus.unsplash.com/premium_photo-1683769252067-c6801a31aeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="500" height="360" alt=" alt="" /></a></div><div class="content">
+								<h2>原創歌曲ㄉ影片</h2>
+								<p><video width="900" controls="controls" >
+        <source src="assets/Produce.mp4" type="video/mp4">
+      </video>
+</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="https://images.unsplash.com/photo-1448831338187-78296e6fdc4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="" /></div><div class="content">
+								<h2>中興大學位置</h2>
+								<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14565.490127482779!2d120.675326!3d24.123552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693cfcecffe9d9%3A0xe28afadc0dad203a!2z5ZyL56uL5Lit6IiI5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1677651960515!5m2!1szh-TW!2stw" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/CMtR17mP3h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+							</div>
+						</section>
+						
+					</section>
+
+<!-- Three -->
+					<section id="three" class="wrapper style2 special">
+						<div class="inner">
+							<header class="major">
+								<h2>謝謝你們的閱讀</h2>
+								<p>真的改版好多次的Me！大家寫作業辛苦了</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-thumbs-up">
+									<h3>ONE OK ROCK</h3>
+							<ul class="actions vertical">
+								<li><a href="https://www.youtube.com/watch?v=CMtR17mP3h8">VOICE</a></li>
+								<li><a href="https://www.youtube.com/watch?v=4n5bpeh5NNg" class="button special icon fa-download">Renegades</a></li>
+							</ul>
+								</li>
+								<li class="icon fa-thumbs-o-up">
+									<h3>LINKING PARK</h3>
+							<ul class="actions vertical">
+								<li><a href="https://www.youtube.com/watch?v=7mrE9P3SDmU" class="button icon fa-download">ONE MORE LIGHT</a></li>
+								<li><a href="https://www.youtube.com/watch?v=Wm4DbEwlw1w" class="button special icon fa-download">EVER GLOW</a></li>
+							</ul>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<li><h4>謝謝老師這學期的教導</h4></li>
+								<li><h4>偉大的網頁設計</h4></li>
+								<li><h4>是渺小的我們努力做出來的</h4></li>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="https://www.google.com.tw/" class="button fit">探索世界</a></li>
+								<li><a href="https://www.youtube.com/?gl=TW&hl=zh-tw"button fit">YOUTUBE</a></li>
+								<li><a href="https://www.nchu.edu.tw/index1.php">我們的學校</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							
+							<li><a href="mailto:aydnadijjpsa@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a>&nbsp;aydnadijjpsa@gmail.com</li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; leem wlm fht</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+      <a href="#" class="btn back-to-top btn-light btn-fixed-bottom"> <span class="glyphicon glyphicon-chevron-up"></span> </a>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<!-- Plugin -->
+			<script src="assets/js/jquery.goup.min.js"></script>
+			<script>
+			$(document).ready(function(){
+    		$.goup();
+			});
+			</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77401319-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
-</body>
+	</body>
 </html>
